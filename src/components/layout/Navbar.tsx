@@ -12,6 +12,7 @@ const navLinks = [
   { href: '/roadmap', label: 'Roadmap' },
   { href: '/milepale', label: 'Milepæle' },
   { href: '/elevrejsen', label: 'Elevrejsen' },
+  { href: '/ideer', label: '💡 Idéer' },
   { href: '/systemer', label: 'Systemer' },
   { href: '/interessenter', label: 'Interessenter' },
   { href: '/risici', label: 'Risici' },
