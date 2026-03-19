@@ -1,0 +1,148 @@
+import { System } from '@/types';
+
+export const systems: System[] = [
+  {
+    id: 'ms365',
+    name: 'Microsoft 365',
+    category: 'kommunikation',
+    vendor: 'Microsoft',
+    description:
+      'Samlet platform for mail, kalender, dokumenter og kommunikation. Kernen i det digitale arbejdsmiljø for både ansatte og elever.',
+    integrationStatus: 'integreret',
+    phaseId: 'fase-1',
+    integratesWith: ['teams', 'sharepoint', 'entra', 'powerautomate', 'powerbi'],
+    features: ['Exchange Online', 'OneDrive', 'Office apps', 'Kalender', 'Kontakter'],
+  },
+  {
+    id: 'teams',
+    name: 'Microsoft Teams',
+    category: 'kommunikation',
+    vendor: 'Microsoft',
+    description:
+      'Primær kommunikationsplatform for videokonferencer, chat og samarbejde. Integreres med Lectio for automatisk skemaopdatering.',
+    integrationStatus: 'integreret',
+    phaseId: 'fase-1',
+    integratesWith: ['ms365', 'lectio', 'sharepoint', 'entra'],
+    features: ['Videomøder', 'Chat', 'Kanaler', 'Filer', 'Skemaintegration'],
+  },
+  {
+    id: 'sharepoint',
+    name: 'SharePoint Online',
+    category: 'administration',
+    vendor: 'Microsoft',
+    description:
+      'Intranet og dokumenthåndtering. Alle politikker, håndbøger og arbejdsdokumenter samles ét sted med versionsstyring og adgangsrettigheder.',
+    integrationStatus: 'integreret',
+    phaseId: 'fase-1',
+    integratesWith: ['ms365', 'teams', 'powerautomate'],
+    features: ['Dokumentbiblioteker', 'Intranet', 'Nyheder', 'Opgavelister', 'Workflow'],
+  },
+  {
+    id: 'entra',
+    name: 'Microsoft Entra ID',
+    category: 'infrastruktur',
+    vendor: 'Microsoft',
+    description:
+      'Identitets- og adgangshåndtering for alle brugere. Muliggør Single Sign-On på tværs af alle integrerede systemer.',
+    integrationStatus: 'integreret',
+    phaseId: 'fase-1',
+    integratesWith: ['ms365', 'teams', 'sharepoint', 'cowork', 'lectio'],
+    features: ['Single Sign-On', 'MFA', 'Betinget adgang', 'Brugeradministration', 'SAML/OAuth'],
+  },
+  {
+    id: 'cowork',
+    name: 'CoWork',
+    category: 'administration',
+    vendor: 'CoWork A/S',
+    description:
+      'Kernesystemet for efterskolen bygget oven på Cloud Code-teknologi. Håndterer elevadministration, CRM, dokumenter og forældrekommunikation.',
+    integrationStatus: 'under-integration',
+    phaseId: 'fase-1',
+    integratesWith: ['ms365', 'entra', 'powerautomate', 'easya'],
+    features: [
+      'Elevadministration',
+      'CRM (potentielle elever)',
+      'Forældreportal',
+      'Dokumenthåndtering',
+      'Kommunikation',
+    ],
+  },
+  {
+    id: 'lectio',
+    name: 'Lectio',
+    category: 'undervisning',
+    vendor: 'MaCom',
+    description:
+      'Skoleadministration og læringsplatform med skema, karakterer, fravær og studieplan. Integreres med Teams for samlet skemavisning.',
+    integrationStatus: 'under-integration',
+    phaseId: 'fase-1',
+    integratesWith: ['teams', 'entra', 'ms365'],
+    features: ['Skema', 'Karakterer', 'Fravær', 'Studieplan', 'Beskeder'],
+  },
+  {
+    id: 'easya',
+    name: 'EASY-A',
+    category: 'administration',
+    vendor: 'EASY-A A/S',
+    description:
+      'Økonomi- og lønsystem til håndtering af skolens regnskab, fakturering, elevbetalinger og lønkørsel.',
+    integrationStatus: 'planlagt',
+    phaseId: 'fase-2',
+    integratesWith: ['cowork', 'powerbi'],
+    features: ['Regnskab', 'Fakturering', 'Elevbetaling', 'Løn', 'Budgetopfølgning'],
+  },
+  {
+    id: 'powerautomate',
+    name: 'Power Automate',
+    category: 'automatisering',
+    vendor: 'Microsoft',
+    description:
+      'Automatiseringsmotor der forbinder alle systemer og håndterer forretningslogik. Reducerer manuelle arbejdsgange dramatisk.',
+    integrationStatus: 'under-integration',
+    phaseId: 'fase-1',
+    integratesWith: ['ms365', 'sharepoint', 'teams', 'cowork', 'easya'],
+    features: [
+      'Cloud flows',
+      'Godkendelsesflows',
+      'Notifikationer',
+      'Dataopdateringer',
+      'Planlagte jobs',
+    ],
+  },
+  {
+    id: 'powerbi',
+    name: 'Power BI',
+    category: 'automatisering',
+    vendor: 'Microsoft',
+    description:
+      'Business Intelligence platform med interaktive dashboards og rapporter for ledelse og administration.',
+    integrationStatus: 'planlagt',
+    phaseId: 'fase-2',
+    integratesWith: ['ms365', 'cowork', 'easya', 'lectio'],
+    features: [
+      'Interaktive dashboards',
+      'Belægningsrapporter',
+      'Økonomirapporter',
+      'Fraværsstatistik',
+      'Elevtilfredshed',
+    ],
+  },
+  {
+    id: 'copilot',
+    name: 'Microsoft Copilot',
+    category: 'automatisering',
+    vendor: 'Microsoft',
+    description:
+      'AI-assistent integreret i Microsoft 365. Hjælper med at opsummere møder, generere dokumentudkast og besvare spørgsmål baseret på skolens data.',
+    integrationStatus: 'planlagt',
+    phaseId: 'fase-3',
+    integratesWith: ['ms365', 'teams', 'sharepoint'],
+    features: [
+      'Mødeopsummering',
+      'Dokumentudkast',
+      'Mail-assistance',
+      'Dataforespørgsler',
+      'Opgavestøtte',
+    ],
+  },
+];

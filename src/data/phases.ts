@@ -1,0 +1,85 @@
+import { Phase } from '@/types';
+
+export const phases: Phase[] = [
+  {
+    id: 'fase-1',
+    year: 1,
+    title: 'Fundament & Integration',
+    subtitle: 'Byg grundlaget for det digitale økosystem',
+    description:
+      'Det første år handler om at etablere den tekniske infrastruktur og integrere de eksisterende systemer. Vi kortlægger dataflows, opretter fælles identitetsplatform via Microsoft Entra ID og sikrer, at alle kernesystemer kan kommunikere sikkert med hinanden. Elevadministration, økonomi og kommunikation bindes sammen i en samlet platform.',
+    startDate: '2026-01-01',
+    endDate: '2026-12-31',
+    status: 'i-gang',
+    completionPercent: 35,
+    goals: [
+      'Implementere Microsoft 365 som samlet kommunikationsplatform',
+      'Integrere Lectio med CoWork og Microsoft Teams',
+      'Etablere fælles Single Sign-On (SSO) for alle systemer',
+      'Digitalisere den fulde ansøgnings- og optagelsesproces',
+      'Opbygge SharePoint-baseret intranet og dokumenthåndtering',
+    ],
+    keyDeliverables: [
+      'Microsoft Entra ID konfigureret for alle brugere',
+      'Lectio-integration med Teams og Exchange',
+      'Digital ansøgningsformular med automatisk sagsbehandling',
+      'SharePoint intranet lanceret',
+      'Power Automate flows til rutinenotifikationer',
+    ],
+    color: 'blue',
+  },
+  {
+    id: 'fase-2',
+    year: 2,
+    title: 'Automatisering & Processer',
+    subtitle: 'Gør det manuelle til det automatiske',
+    description:
+      'Det andet år fokuserer på at automatisere de arbejdsprocesser, som er identificeret i fase 1. Via Microsoft Power Platform og CoWork bygger vi intelligent workflowautomatisering, der reducerer manuelle arbejdsgange markant. Elevrejsen fra første kontakt til fuld indskrivning automatiseres, og administrative processer håndteres digitalt fra ende til anden.',
+    startDate: '2027-01-01',
+    endDate: '2027-12-31',
+    status: 'ikke-startet',
+    completionPercent: 0,
+    goals: [
+      'Fuld automatisering af elevrejsen (kontakt → indskrivning)',
+      'Automatisk oprettelse af elevmapper og onboarding',
+      'Intelligent møde- og ressourceplanlægning',
+      'Automatiseret fakturering og betalingsopfølgning',
+      'Power BI dashboards til ledelse og administrationen',
+    ],
+    keyDeliverables: [
+      'Automatiseret elevonboarding-flow',
+      'Forældre- og elevportal i CoWork',
+      'Power Automate: 20+ automatiserede forretningsflows',
+      'Power BI rapporter for økonomi og nøgletal',
+      'Digital signatur og dokumentgodkendelse',
+    ],
+    color: 'violet',
+  },
+  {
+    id: 'fase-3',
+    year: 3,
+    title: 'Fuld Platform & Optimering',
+    subtitle: 'Realisér visionen om fuld digital integration',
+    description:
+      'Det tredje år handler om at realisere den fulde vision: et sammenhængende digitalt økosystem, hvor alle systemer er integreret, data bevæger sig frit og sikkert, og beslutninger understøttes af intelligente indsigter. Vi optimerer på baggrund af erfaring fra de første to år og forbereder platformen til langvarig drift og videreudvikling.',
+    startDate: '2028-01-01',
+    endDate: '2028-12-31',
+    status: 'ikke-startet',
+    completionPercent: 0,
+    goals: [
+      'Fuld integration af alle skolesystemer i ét dataunivers',
+      'AI-assisterede arbejdsværktøjer for lærere og administration',
+      'Realtids-dashboard for skolens samlede drift',
+      'Selvbetjeningsportal for elever, forældre og lærere',
+      'Dokumenteret model som kan deles med andre efterskoler',
+    ],
+    keyDeliverables: [
+      'Komplet API-lag der forbinder alle systemer',
+      'AI Copilot integreret i daglige arbejdsflows',
+      'Fælles dataplatform med real-time indsigter',
+      'Færdig selvbetjeningsportal',
+      'Dokumenteret blueprint til sektordeling',
+    ],
+    color: 'emerald',
+  },
+];
