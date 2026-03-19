@@ -1,17 +1,15 @@
-import HeroSection from '@/components/home/HeroSection';
-import QuickStats from '@/components/home/QuickStats';
-import TimelineOverview from '@/components/home/TimelineOverview';
-import HighlightsSection from '@/components/home/HighlightsSection';
 import MindmapDisclaimer from '@/components/home/MindmapDisclaimer';
+import VisionHero from '@/components/home/VisionHero';
+import VisionPillars from '@/components/home/VisionPillars';
+import WhatIsThis from '@/components/home/WhatIsThis';
 
 export default function HomePage() {
   return (
     <>
       <MindmapDisclaimer />
-      <HeroSection />
-      <QuickStats />
-      <TimelineOverview />
-      <HighlightsSection />
+      <VisionHero />
+      <WhatIsThis />
+      <VisionPillars />
     </>
   );
 }

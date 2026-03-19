@@ -19,9 +19,9 @@ export const risks: Risk[] = [
   },
   {
     id: 'r-2',
-    title: 'Forsinkelse i leverandørintegration',
+    title: 'Forsinkelse i systemintegration',
     description:
-      'Integration mellem CoWork og Microsoft-platformen kan tage længere tid end planlagt pga. tekniske udfordringer eller manglende ressourcer hos leverandøren.',
+      'Integration mellem kernesystemer kan tage længere tid end planlagt pga. tekniske udfordringer, manglende API-understøttelse eller ressourcemangel hos leverandører.',
     category: 'teknisk',
     probability: 3,
     impact: 4,
@@ -92,23 +92,23 @@ export const risks: Risk[] = [
     riskScore: 9,
     status: 'aben',
     mitigationPlan:
-      'Grundig teknisk audit i projektets opstartsfase. Tydelig kortlægning af eksisterende datastrukturer. Allokering af dedikeret tid til migration og rydning.',
+      'Grundig teknisk audit i projektets opstartsfase. Tydelig kortlægning af eksisterende datastrukturer. Allokering af dedikeret tid til migration og oprydning.',
     owner: 'IT-ansvarlig',
     phaseId: 'fase-1',
     identifiedDate: '2026-02-01',
   },
   {
     id: 'r-7',
-    title: 'Manglende kompetencer til Power Platform',
+    title: 'Manglende kompetencer til automatiseringsplatform',
     description:
-      'Skolens medarbejdere har ikke tilstrækkelige kompetencer til at bygge og vedligeholde Power Automate-flows og Power BI-rapporter selvstændigt.',
+      'Skolens medarbejdere har ikke tilstrækkelige kompetencer til at bygge og vedligeholde automatiserede workflows og rapporter selvstændigt.',
     category: 'kompetence',
     probability: 4,
     impact: 3,
     riskScore: 12,
     status: 'aben',
     mitigationPlan:
-      'Planlagt uddannelsesforløb for superbrugere i fase 2. Ekstern konsulent tilknyttes i opstartsfasen. Microsoft Learning-ressourcer tildeles alle relevante medarbejdere.',
+      'Planlagt uddannelsesforløb for superbrugere i fase 2. Ekstern konsulent tilknyttes i opstartsfasen. Leverandørens læringsressourcer tildeles relevante medarbejdere.',
     owner: 'Viceforstander',
     phaseId: 'fase-2',
     identifiedDate: '2026-03-01',

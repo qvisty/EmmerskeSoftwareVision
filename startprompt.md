@@ -1,0 +1,9 @@
+Jeg ønsker at udvikle et projekt, der over de næste tre år positionerer os som førende i institutionsrejsen mod fuld automatisering.
+
+Visionen er at skabe et sammenhængende digitalt økosystem for efterskolen, hvor alle dele af softwarelandskabet er integreret gennem grænseflader, der understøtter sikker og effektiv dataudveksling. Systemet skal baseres på Microsoft CoWork, bygget oven på teknologien i Cloud Code, og gøre det muligt at forbinde løsninger på tværs, så data kan bevæge sig frit og anvendes intelligent.
+
+Målet er at etablere en helhedsoplevelse, hvor automatisering er gennemgående og vidtgående. Det gælder blandt andet den samlede brugerrejse fra en potentiel elevs første kontakt og besøg på skolen til fuld indskrivning, oprettelse af elevmapper, planlægning af møder og øvrige administrative processer. Denne rejse skal tænkes som én sammenhængende proces, der understøttes digitalt fra start til slut.
+
+Som en del af projektet skal der udvikles en dynamisk og interaktiv hjemmeside, der formidler den samlede projektbeskrivelse. Hjemmesiden skal give et klart overblik over visionen, de forskellige faser i projektet, centrale milepæle, risici, involverede parter samt de systemer og teknologier, der indgår i løsningen. Samtidig skal den give mulighed for at dykke ned i de enkelte elementer og skabe transparens i både beslutninger og fremdrift.
+
+Projektet skal tage udgangspunkt i anerkendt projektledelsespraksis og fungere som et styringsværktøj, der løbende kan tilpasses og videreudvikles. Målet er at sikre en struktureret, realistisk og ambitiøs rejse frem mod en fuldt integreret og automatiseret digital platform inden for tre år.
