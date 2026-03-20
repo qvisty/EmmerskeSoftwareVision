@@ -17,25 +17,10 @@ export const stakeholders: Stakeholder[] = [
     avatarInitials: 'FS',
   },
   {
-    id: 'sh-2',
-    name: 'Viceforstander / Administrativ leder',
-    role: 'Projektleder og operationel koordinator',
-    group: 'administration',
-    influence: 'hoj',
-    interest: 'hoj',
-    responsibilities: [
-      'Daglig projektledelse og koordination',
-      'Kontakt til leverandører og IT-partner',
-      'Opfølgning på mål og fremdrift',
-      'Facilitering af implementering på tværs af afdelinger',
-    ],
-    avatarInitials: 'VL',
-  },
-  {
     id: 'sh-3',
-    name: 'IT-ansvarlig',
-    role: 'Teknisk projektleder og systemadministrator',
-    group: 'administration',
+    name: 'IT-vejleder (lærer)',
+    role: 'Teknisk ressourceperson og systemansvarlig',
+    group: 'laerere',
     influence: 'hoj',
     interest: 'hoj',
     responsibilities: [
