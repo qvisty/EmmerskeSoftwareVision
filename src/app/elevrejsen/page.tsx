@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import PageHeader from '@/components/layout/PageHeader';
 import JourneyMap from '@/components/elevrejsen/JourneyMap';
 import ElevFlowDiagram from '@/components/elevrejsen/ElevFlowDiagram';
@@ -40,6 +41,31 @@ export default function ElevrejsenPage() {
             </p>
           </div>
           <ElevFlowDiagram />
+        </div>
+
+        {/* Eksempelbillede */}
+        <div className="mt-16">
+          <div className="mb-4">
+            <h2 className="text-xl font-bold text-slate-900">Eksempel: Mail automation flow</h2>
+            <p className="mt-1 text-sm text-slate-500">
+              Nedenstående diagram er et <strong>arbejdseksempel</strong> og ikke et færdigt flow.
+              Det illustrerer, hvordan et automatiseret mail-flow kan se ud — fra første interesse
+              til indskrivning — og skal ses som inspiration til det videre arbejde.
+            </p>
+          </div>
+          <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm overflow-x-auto">
+            <Image
+              src="/images/elevrejsen/mail-automation-eksempel.png"
+              alt="Eksempel på mail automation flow for elevrejsen"
+              width={1200}
+              height={600}
+              className="w-full h-auto"
+              unoptimized
+            />
+          </div>
+          <p className="mt-2 text-xs text-slate-400 text-center">
+            Dette er et eksempel på et automatiseringsflow — ikke et endeligt design.
+          </p>
         </div>
 
       </div>
