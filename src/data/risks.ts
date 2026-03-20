@@ -39,9 +39,9 @@ export const risks: Risk[] = [
     description:
       'Projektet kan overskride det planlagte budget pga. uforudsete tekniske krav, ændringer i scope eller stigende licensomkostninger.',
     category: 'okonomisk',
-    probability: 3,
-    impact: 3,
-    riskScore: 9,
+    probability: 2,
+    impact: 2,
+    riskScore: 4,
     status: 'aben',
     mitigationPlan:
       '20% buffer i budgettet. Kvartalsvise budgetreview. Løbende scope-styring. Prioritering af kritiske leverancer fremfor nice-to-have.',
@@ -56,8 +56,8 @@ export const risks: Risk[] = [
       'Fejlkonfiguration af datadelingsaftaler eller utilstrækkelig sikkerhed kan føre til GDPR-overtrædelse med store bøder og reputationstab til følge.',
     category: 'teknisk',
     probability: 2,
-    impact: 5,
-    riskScore: 10,
+    impact: 4,
+    riskScore: 8,
     status: 'mitigeret',
     mitigationPlan:
       'GDPR-gennemgang af alle dataflows med ekstern konsulent. DPA-aftaler med alle leverandører. Adgangslogning og review. Dataminimering som designprincip.',
@@ -71,9 +71,9 @@ export const risks: Risk[] = [
     description:
       'Hvis IT-ansvarlig eller projektleder fratræder, kan kritisk viden gå tabt og implementering forsinkes markant.',
     category: 'organisatorisk',
-    probability: 2,
-    impact: 4,
-    riskScore: 8,
+    probability: 1,
+    impact: 3,
+    riskScore: 3,
     status: 'mitigeret',
     mitigationPlan:
       'Komplet løbende dokumentation af alle beslutninger og konfigurationer. Knowledge sharing med minimum 2 personer pr. kritisk kompetence. Backup-ressourcer identificeret.',
@@ -87,9 +87,9 @@ export const risks: Risk[] = [
     description:
       'Ældre systemkonfigurationer og manglende standardisering i eksisterende løsninger kan gøre integrationsarbejdet mere komplekst end forventet.',
     category: 'teknisk',
-    probability: 3,
-    impact: 3,
-    riskScore: 9,
+    probability: 2,
+    impact: 2,
+    riskScore: 4,
     status: 'aben',
     mitigationPlan:
       'Grundig teknisk audit i projektets opstartsfase. Tydelig kortlægning af eksisterende datastrukturer. Allokering af dedikeret tid til migration og oprydning.',
@@ -103,9 +103,9 @@ export const risks: Risk[] = [
     description:
       'Skolens medarbejdere har ikke tilstrækkelige kompetencer til at bygge og vedligeholde automatiserede workflows og rapporter selvstændigt.',
     category: 'kompetence',
-    probability: 4,
+    probability: 3,
     impact: 3,
-    riskScore: 12,
+    riskScore: 9,
     status: 'aben',
     mitigationPlan:
       'Planlagt uddannelsesforløb for superbrugere i fase 2. Ekstern konsulent tilknyttes i opstartsfasen. Leverandørens læringsressourcer tildeles relevante medarbejdere.',
@@ -119,9 +119,9 @@ export const risks: Risk[] = [
     description:
       'Ønsker om yderligere funktionalitet og integrationer undervejs kan udvande fokus og forsinke planlagte leverancer.',
     category: 'tidsmassig',
-    probability: 4,
-    impact: 2,
-    riskScore: 8,
+    probability: 2,
+    impact: 1,
+    riskScore: 2,
     status: 'aben',
     mitigationPlan:
       'Streng ændrings-styringsprocedure. Alle nye ønsker logges og prioriteres i næste fase. Månedlige statusmøder med scope-gennemgang. Tydelig definition af hvad der er "i scope".',
