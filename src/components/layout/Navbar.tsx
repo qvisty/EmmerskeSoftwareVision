@@ -11,7 +11,6 @@ const navLinks = [
   { href: '/vision', label: 'Vision' },
   { href: '/planen', label: 'Transformationsplanen' },
   { href: '/elevrejsen', label: 'Elevrejsen' },
-  { href: '/elev-flow', label: 'Elev-flow' },
   { href: '/ideer', label: '💡 Idéer' },
   { href: '/systemer', label: 'Systemer' },
   { href: '/interessenter', label: 'Interessenter' },
