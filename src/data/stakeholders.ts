@@ -51,7 +51,7 @@ export const stakeholders: Stakeholder[] = [
     name: 'Administrativ medarbejder',
     role: 'Superbruger på administrative systemer',
     group: 'administration',
-    influence: 'medium',
+    influence: 'hoj',
     interest: 'hoj',
     responsibilities: [
       'Daglig drift af administrationssystemerne',
