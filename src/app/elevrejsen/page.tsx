@@ -55,7 +55,7 @@ export default function ElevrejsenPage() {
           </div>
           <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm overflow-x-auto">
             <Image
-              src="/images/elevrejsen/mail-automation-eksempel.png"
+              src="/EmmerskeSoftwareVision/images/elevrejsen/mail-automation-eksempel.png"
               alt="Eksempel på mail automation flow for elevrejsen"
               width={1200}
               height={600}
