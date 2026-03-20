@@ -40,7 +40,7 @@ export default function TimelineOverview() {
             return (
               <Link
                 key={phase.id}
-                href="/roadmap"
+                href="/planen"
                 className={cn(
                   'group relative rounded-xl border p-6 transition-all hover:shadow-md',
                   colors.light

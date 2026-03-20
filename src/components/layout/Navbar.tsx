@@ -9,14 +9,12 @@ import { cn } from '@/lib/utils';
 const navLinks = [
   { href: '/', label: 'Forside' },
   { href: '/vision', label: 'Vision' },
-  { href: '/roadmap', label: 'Roadmap' },
-  { href: '/milepale', label: 'Milepæle' },
+  { href: '/planen', label: 'Transformationsplanen' },
   { href: '/elevrejsen', label: 'Elevrejsen' },
   { href: '/ideer', label: '💡 Idéer' },
   { href: '/systemer', label: 'Systemer' },
   { href: '/interessenter', label: 'Interessenter' },
   { href: '/risici', label: 'Risici' },
-  { href: '/fremdrift', label: 'Vores rejse' },
 ];
 
 export default function Navbar() {
