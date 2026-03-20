@@ -19,6 +19,12 @@ const phaseColor: Record<number, string> = {
   3: 'bg-emerald-100 text-emerald-700',
 };
 
+const phaseIndent: Record<number, string> = {
+  1: 'ml-0',
+  2: 'ml-8',
+  3: 'ml-16',
+};
+
 export default function VisionPage() {
   return (
     <>
@@ -70,6 +76,7 @@ export default function VisionPage() {
                   key={goal.id}
                   className={cn(
                     'flex gap-4 rounded-xl border p-5',
+                    phaseIndent[goal.targetPhase],
                     goal.achieved
                       ? 'border-emerald-200 bg-emerald-50'
                       : 'border-slate-200 bg-white'
