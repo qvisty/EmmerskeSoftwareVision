@@ -16,7 +16,7 @@ const navLinks = [
   { href: '/systemer', label: 'Systemer' },
   { href: '/interessenter', label: 'Interessenter' },
   { href: '/risici', label: 'Risici' },
-  { href: '/fremdrift', label: 'Fremdrift' },
+  { href: '/fremdrift', label: 'Vores rejse' },
 ];
 
 export default function Navbar() {

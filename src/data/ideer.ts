@@ -34,13 +34,13 @@ export const ideaCategories: IdeaCategory[] = [
       },
       {
         title: 'Fravær → forældreopkald',
-        description: 'Notifikation sendes automatisk til forældre, inden læreren overhovedet har reageret manuelt.',
+        description: 'Notifikation sendes automatisk til forældre, så snart fravær registreres i skoleadministrationsplatformen.',
         complexity: 'lav',
         value: 'hoj',
       },
       {
         title: 'Elevskift mellem hold',
-        description: 'Én handling opdaterer Lectio, Teams-grupper og rumreservationer på tværs af alle systemer.',
+        description: 'Én handling opdaterer alle berørte systemer automatisk: skema, kommunikationsgrupper og rumreservationer.',
         complexity: 'medium',
         value: 'medium',
       },
@@ -52,7 +52,7 @@ export const ideaCategories: IdeaCategory[] = [
       },
       {
         title: 'Dimissionsbevis',
-        description: 'Genereres og sendes automatisk til elev og forældre ved skoleårsafslutning baseret på Lectio-data.',
+        description: 'Genereres og sendes automatisk til elev og forældre ved skoleårsafslutning baseret på data fra skoleadministrationsplatformen.',
         complexity: 'medium',
         value: 'hoj',
       },
@@ -83,8 +83,8 @@ export const ideaCategories: IdeaCategory[] = [
         value: 'medium',
       },
       {
-        title: 'UFM-tilskudsrapportering',
-        description: 'Data til Undervisningsministeriets indberetninger indsamles automatisk fra elevsystemerne.',
+        title: 'Tilskudsrapportering',
+        description: 'Data til myndighedsindberetninger indsamles automatisk fra elevsystemerne og samles i én rapport.',
         complexity: 'hoj',
         value: 'hoj',
       },
@@ -142,7 +142,7 @@ export const ideaCategories: IdeaCategory[] = [
       },
       {
         title: 'Fejlmelding og vedligeholdelse',
-        description: 'Elever og lærere indmelder fejl via app. Opgaven tildeles automatisk den rette servicemedarbejder.',
+        description: 'Elever og lærere indmelder fejl via en simpel formular. Opgaven tildeles automatisk den rette servicemedarbejder.',
         complexity: 'lav',
         value: 'hoj',
       },
@@ -174,7 +174,7 @@ export const ideaCategories: IdeaCategory[] = [
     ideas: [
       {
         title: 'Fraværsregistrering med notifikation',
-        description: 'Fravær registreres i Lectio og forældre notificeres automatisk – integreret og uden manuelle opkald.',
+        description: 'Fravær registreres i skoleadministrationsplatformen og forældre notificeres automatisk – integreret og uden manuelle opkald.',
         complexity: 'lav',
         value: 'hoj',
       },
@@ -192,7 +192,7 @@ export const ideaCategories: IdeaCategory[] = [
       },
       {
         title: 'Udlån af udstyr',
-        description: 'Sportsudstyr, musikinstrumenter og andet udstyr registreres digitalt. Automatisk påmindelse ved for sent returneret udstyr.',
+        description: 'Sportsudstyr, musikinstrumenter og andet udstyr registreres digitalt. Automatisk påmindelser ved for sent returneret udstyr.',
         complexity: 'lav',
         value: 'medium',
       },
@@ -230,7 +230,7 @@ export const ideaCategories: IdeaCategory[] = [
       },
       {
         title: 'Årsrapport til forældre',
-        description: 'Genereres automatisk ud fra Lectio-data og elevmappens noter. Lærer godkender – sender med ét klik.',
+        description: 'Genereres automatisk ud fra skoleadministrationssystemets data og elevmappens noter. Lærer godkender – sender med ét klik.',
         complexity: 'hoj',
         value: 'hoj',
       },
@@ -276,7 +276,7 @@ export const ideaCategories: IdeaCategory[] = [
     ideas: [
       {
         title: 'Digital mønstring ved brandøvelse',
-        description: 'Eleverne registreres digitalt ved mønstringsstedet. Manglende elever flagges i realtid til det øverste ansvarlige.',
+        description: 'Eleverne registreres digitalt ved mønstringsstedet. Manglende elever flagges i realtid til det øverst ansvarlige.',
         complexity: 'medium',
         value: 'hoj',
       },

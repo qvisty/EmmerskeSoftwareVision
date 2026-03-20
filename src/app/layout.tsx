@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import MindmapDisclaimer from '@/components/home/MindmapDisclaimer';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -24,6 +25,7 @@ export default function RootLayout({
     <html lang="da" className={inter.variable}>
       <body className="min-h-screen flex flex-col">
         <Navbar />
+        <MindmapDisclaimer />
         <main className="flex-1">{children}</main>
         <Footer />
       </body>

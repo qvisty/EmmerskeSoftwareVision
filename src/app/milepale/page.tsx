@@ -12,9 +12,9 @@ export default function MilestonesPage() {
     <>
       <PageHeader
         title="Milepæle"
-        subtitle="Alle planlagte og opnåede milepæle fordelt på projektets tre faser"
-        badge={`${milestones.filter((m) => m.status === 'fuldfort').length}/${milestones.length} fuldført`}
-        badgeColor="emerald"
+        subtitle="Planlagte milepæle og leverancer fordelt på projektets tre faser"
+        badge={`${milestones.length} milepæle i alt`}
+        badgeColor="blue"
       />
 
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
@@ -28,15 +28,13 @@ export default function MilestonesPage() {
 
           return (
             <div key={phase.id} className="mb-12">
-              <div className="mb-6 flex items-center gap-3">
-                <div>
-                  <h2 className={`text-xl font-bold ${phaseColorClass[phase.color]}`}>
-                    År {phase.year}: {phase.title}
-                  </h2>
-                  <p className="text-sm text-slate-500">
-                    {phaseMilestones.filter((m) => m.status === 'fuldfort').length} af {phaseMilestones.length} milepæle fuldført
-                  </p>
-                </div>
+              <div className="mb-6">
+                <h2 className={`text-xl font-bold ${phaseColorClass[phase.color]}`}>
+                  År {phase.year}: {phase.title}
+                </h2>
+                <p className="text-sm text-slate-500 mt-0.5">
+                  {phase.startDate.slice(0, 4)}–{phase.endDate.slice(0, 4)} · {phaseMilestones.length} milepæle
+                </p>
               </div>
 
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

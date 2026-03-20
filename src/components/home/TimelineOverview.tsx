@@ -23,12 +23,6 @@ const phaseColors = {
   },
 };
 
-const statusLabels: Record<string, string> = {
-  'i-gang': 'I gang',
-  'ikke-startet': 'Ikke startet',
-  afsluttet: 'Afsluttet',
-};
-
 export default function TimelineOverview() {
   return (
     <section className="px-4 py-16 sm:px-6 lg:px-8">
@@ -36,12 +30,12 @@ export default function TimelineOverview() {
         <div className="mb-10 text-center">
           <h2 className="text-2xl font-bold text-slate-900 sm:text-3xl">3-årig transformationsplan</h2>
           <p className="mt-2 text-slate-600">
-            Tre faser der bygger på hinanden mod et fuldt integreret digitalt fondament
+            Tre faser der bygger på hinanden mod et fuldt integreret digitalt fundament
           </p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
-          {phases.map((phase, index) => {
+          {phases.map((phase) => {
             const colors = phaseColors[phase.color];
             return (
               <Link
@@ -52,32 +46,13 @@ export default function TimelineOverview() {
                   colors.light
                 )}
               >
-                {/* Year badge */}
-                <div className={cn('mb-4 flex items-center justify-between')}>
-                  <span className={cn('rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wide', colors.badge)}>
-                    År {phase.year} · {phase.startDate.slice(0, 4)}
-                  </span>
-                  <span className="text-xs text-slate-500">{statusLabels[phase.status]}</span>
-                </div>
+                <span className={cn('rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wide', colors.badge)}>
+                  År {phase.year} · {phase.startDate.slice(0, 4)}
+                </span>
 
-                <h3 className={cn('text-lg font-bold', colors.text)}>{phase.title}</h3>
+                <h3 className={cn('mt-3 text-lg font-bold', colors.text)}>{phase.title}</h3>
                 <p className="mt-1 text-sm text-slate-600">{phase.subtitle}</p>
 
-                {/* Progress bar */}
-                <div className="mt-4">
-                  <div className="flex justify-between text-xs text-slate-500 mb-1">
-                    <span>Fremdrift</span>
-                    <span>{phase.completionPercent}%</span>
-                  </div>
-                  <div className="h-2 w-full rounded-full bg-white/70 overflow-hidden border border-white">
-                    <div
-                      className={cn('h-full rounded-full transition-all', colors.bg)}
-                      style={{ width: `${phase.completionPercent}%` }}
-                    />
-                  </div>
-                </div>
-
-                {/* Goals preview */}
                 <ul className="mt-4 space-y-1">
                   {phase.goals.slice(0, 3).map((goal, i) => (
                     <li key={i} className="flex items-start gap-2 text-xs text-slate-600">
@@ -90,7 +65,7 @@ export default function TimelineOverview() {
                   )}
                 </ul>
 
-                <div className="mt-4 text-xs font-medium group-hover:underline" style={{ color: 'inherit' }}>
+                <div className="mt-4 text-xs font-medium group-hover:underline">
                   <span className={colors.text}>Se detaljer →</span>
                 </div>
               </Link>
